@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>styles/app.qss</file>
+        <file>icons/toggle-on.svg</file>
+        <file>icons/toggle-off.svg</file>
+        <file>icons/toggle-on-disabled.svg</file>
+        <file>icons/toggle-off-disabled.svg</file>
+        <file>icons/check-mark.svg</file>
+        <file>icons/chevron-down.svg</file>
+        <file>icons/chevron-down-disabled.svg</file>
+        <file>icons/chevron-up.svg</file>
+        <file>icons/chevron-up-disabled.svg</file>
+        <file>icons/ico.ico</file>
+        <file>icons/ico.png</file>
+    </qresource>
+</RCC>

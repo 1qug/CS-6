@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ui version="4.0">
+ <class>NoisePage</class>
+ <widget class="QWidget" name="NoisePage">
+  <property name="pageRoot" stdset="0">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="noisePageLayout">
+   <property name="spacing">
+    <number>10</number>
+   </property>
+   <property name="leftMargin">
+    <number>10</number>
+   </property>
+   <property name="topMargin">
+    <number>10</number>
+   </property>
+   <property name="rightMargin">
+    <number>10</number>
+   </property>
+   <property name="bottomMargin">
+    <number>10</number>
+   </property>
+   <item alignment="Qt::AlignLeft">
+    <widget class="QPushButton" name="backNoiseButton">
+     <property name="text">
+      <string>返回主页</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="noiseCard">
+     <property name="card" stdset="0">
+      <bool>true</bool>
+     </property>
+     <layout class="QVBoxLayout" name="noiseCardOuterLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="noiseCardHeader">
+        <property name="cardHeader" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string>噪声设置</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="noiseCardBody">
+        <property name="cardBody" stdset="0">
+         <bool>true</bool>
+        </property>
+        <layout class="QVBoxLayout" name="noiseBodyLayout">
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <property name="topMargin">
+          <number>10</number>
+         </property>
+         <property name="rightMargin">
+          <number>10</number>
+         </property>
+         <property name="bottomMargin">
+          <number>10</number>
+         </property>
+         <item>
+          <layout class="QFormLayout" name="noiseFormLayout">
+           <property name="horizontalSpacing">
+            <number>10</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelNoiseFactor">
+             <property name="text">
+              <string>相噪调节因子</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="noiseFactorSpin">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="maximum">
+              <number>9999</number>
+             </property>
+             <property name="value">
+              <number>100</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="noiseNoteLabel">
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>噪声调节仅适用于 YSMF 系列信号源，本机不支持该功能。</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="noisePageSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources />
+ <connections />
+</ui>

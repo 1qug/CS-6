@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ui version="4.0">
+ <class>SystemInfoPage</class>
+ <widget class="QWidget" name="SystemInfoPage">
+  <property name="pageRoot" stdset="0">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="systemInfoPageLayout">
+   <property name="spacing">
+    <number>10</number>
+   </property>
+   <property name="leftMargin">
+    <number>10</number>
+   </property>
+   <property name="topMargin">
+    <number>10</number>
+   </property>
+   <property name="rightMargin">
+    <number>10</number>
+   </property>
+   <property name="bottomMargin">
+    <number>10</number>
+   </property>
+   <item alignment="Qt::AlignLeft">
+    <widget class="QPushButton" name="backSystemInfoButton">
+     <property name="text">
+      <string>返回主页</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="systemInfoCard">
+     <property name="card" stdset="0">
+      <bool>true</bool>
+     </property>
+     <layout class="QVBoxLayout" name="systemInfoCardOuterLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="systemInfoCardHeader">
+        <property name="cardHeader" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string>系统信息</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="systemInfoCardBody">
+        <property name="cardBody" stdset="0">
+         <bool>true</bool>
+        </property>
+        <layout class="QFormLayout" name="systemInfoForm">
+         <property name="horizontalSpacing">
+          <number>10</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>6</number>
+         </property>
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <property name="topMargin">
+          <number>10</number>
+         </property>
+         <property name="rightMargin">
+          <number>10</number>
+         </property>
+         <property name="bottomMargin">
+          <number>10</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="labelModel">
+           <property name="text">
+            <string>设备型号</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="modelValueLabel">
+           <property name="text">
+            <string>CS-6 便携式射频信号发生器</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="labelFrequencyRange">
+           <property name="text">
+            <string>频率范围</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="frequencyRangeValueLabel">
+           <property name="text">
+            <string>24 MHz ~ 6.5 GHz</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="labelPowerRange">
+           <property name="text">
+            <string>功率范围</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="powerRangeValueLabel">
+           <property name="text">
+            <string>-95 ~ +15 dBm</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="labelModulationRange">
+           <property name="text">
+            <string>调制方式</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLabel" name="modulationRangeValueLabel">
+           <property name="text">
+            <string>内部 ASK</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="labelInterfaces">
+           <property name="text">
+            <string>控制接口</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLabel" name="interfacesValueLabel">
+           <property name="text">
+            <string>USB (FT232RL) / LAN</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="systemInfoPageSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources />
+ <connections />
+</ui>

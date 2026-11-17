@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ui version="4.0">
+ <class>GeneratorPage</class>
+ <widget class="QWidget" name="GeneratorPage">
+  <layout class="QHBoxLayout" name="rootLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="Sidebar">
+     <property name="minimumSize">
+      <size>
+       <width>212</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>212</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <layout class="QVBoxLayout" name="sidebarLayout">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="leftMargin">
+       <number>12</number>
+      </property>
+      <property name="topMargin">
+       <number>12</number>
+      </property>
+      <property name="rightMargin">
+       <number>12</number>
+      </property>
+      <property name="bottomMargin">
+       <number>12</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="homeButton">
+        <property name="minimumSize">
+         <size>
+          <width>52</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>188</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>首页</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="connectPageButton">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>188</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>设备连接</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="statusHeadingLabel">
+        <property name="sidebarHeading" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string>设备状态</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lockLabel">
+        <property name="text">
+         <string>Lock State:
+—</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="referenceStateLabel">
+        <property name="text">
+         <string>Ref State:
+—</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="temperatureLabel">
+        <property name="text">
+         <string>Temperature:
+—</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="fanLabel">
+        <property name="text">
+         <string>Fan State:
+—</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="sidebarStatusSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>8</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="commandHeadingLabel">
+        <property name="sidebarHeading" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string>控制指令</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="commandPreview">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>52</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>—</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="responseHeadingLabel">
+        <property name="sidebarHeading" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string>回传指令</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="responsePreview">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>76</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>—</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="sidebarBottomSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="generatorStack">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="ConnectionPage" name="connectionPage">
+      </widget>
+     <widget class="HomePage" name="homePage">
+      </widget>
+     <widget class="ReferencePage" name="referencePage">
+      </widget>
+     <widget class="ModulationPage" name="modulationPage">
+      </widget>
+     <widget class="SweepPage" name="sweepPage">
+      </widget>
+     <widget class="NoisePage" name="noisePage">
+      </widget>
+     <widget class="SystemInfoPage" name="systemInfoPage">
+      </widget>
+     <widget class="CalibrationPage" name="calibrationPage">
+      </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ConnectionPage</class>
+   <extends>QWidget</extends>
+   <header>ui/pages/generator/connectionpage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>HomePage</class>
+   <extends>QWidget</extends>
+   <header>ui/pages/generator/homepage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ReferencePage</class>
+   <extends>QWidget</extends>
+   <header>ui/pages/generator/referencepage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ModulationPage</class>
+   <extends>QWidget</extends>
+   <header>ui/pages/generator/modulationpage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SweepPage</class>
+   <extends>QWidget</extends>
+   <header>ui/pages/generator/sweeppage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>NoisePage</class>
+   <extends>QWidget</extends>
+   <header>ui/pages/generator/noisepage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SystemInfoPage</class>
+   <extends>QWidget</extends>
+   <header>ui/pages/generator/systeminfopage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CalibrationPage</class>
+   <extends>QWidget</extends>
+   <header>ui/pages/generator/calibrationpage.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources />
+ <connections />
+</ui>

@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ui version="4.0">
+ <class>CalibrationPage</class>
+ <widget class="QWidget" name="CalibrationPage">
+  <property name="pageRoot" stdset="0">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="calibrationPageLayout">
+   <property name="spacing">
+    <number>10</number>
+   </property>
+   <property name="leftMargin">
+    <number>10</number>
+   </property>
+   <property name="topMargin">
+    <number>10</number>
+   </property>
+   <property name="rightMargin">
+    <number>10</number>
+   </property>
+   <property name="bottomMargin">
+    <number>10</number>
+   </property>
+   <item alignment="Qt::AlignLeft">
+    <widget class="QPushButton" name="backCalibrationButton">
+     <property name="text">
+      <string>返回主页</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="calibrationCard">
+     <property name="card" stdset="0">
+      <bool>true</bool>
+     </property>
+     <layout class="QVBoxLayout" name="calibrationCardOuterLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="calibrationCardHeader">
+        <property name="cardHeader" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string>参数校准</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="calibrationCardBody">
+        <property name="cardBody" stdset="0">
+         <bool>true</bool>
+        </property>
+        <layout class="QVBoxLayout" name="calibrationBodyLayout">
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <property name="topMargin">
+          <number>10</number>
+         </property>
+         <property name="rightMargin">
+          <number>10</number>
+         </property>
+         <property name="bottomMargin">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="calibrationNoteLabel">
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>出厂系统参数与指标校准功能，不对用户开放。</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="calibrationButton">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>参数校准（保留）</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="calibrationPageSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources />
+ <connections />
+</ui>

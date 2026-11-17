@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- Filters mirror the on-disk layout under src/ (and resources/). -->
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{0D2A4C68-8B1E-4F53-9A76-2C4E8B1D5F30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\app">
+      <UniqueIdentifier>{1E3B5D79-9C2F-4064-AB87-3D5F9C2E6A41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{2F4C6E8A-AD30-4175-BC98-4E6A0D3F7B52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\protocol">
+      <UniqueIdentifier>{3A5D7F9B-BE41-4286-CD09-5F7B1E4A8C63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\transport">
+      <UniqueIdentifier>{4B6E8A0C-CF52-4397-DE1A-6A8C2F5B9D74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui">
+      <UniqueIdentifier>{5C7F9B1D-D063-44A8-EF2B-7B9D3A6C0E85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui\mainwindow">
+      <UniqueIdentifier>{6D8A0C2E-E174-45B9-F03C-8C0E4B7D1F96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui\pages">
+      <UniqueIdentifier>{7E9B1D3F-F285-46CA-014D-9D1F5C8E2A07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui\pages\generator">
+      <UniqueIdentifier>{8FA0CE40-0396-47DB-125E-AE206D9F3B18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui\pages\lanconfig">
+      <UniqueIdentifier>{90B1DF51-14A7-48EC-236F-BF317EA04C29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{A1C2E062-25B8-49FD-3470-C0428FB15D3A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\siggenclient.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\usrm0client.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\protocol\siggenprotocol.cpp">
+      <Filter>src\core\protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\protocol\usrm0protocol.cpp">
+      <Filter>src\core\protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="src\transport\serialtransport.cpp">
+      <Filter>src\transport</Filter>
+    </ClCompile>
+    <ClCompile Include="src\transport\tcptransport.cpp">
+      <Filter>src\transport</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\theme.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\mainwindow\mainwindow.cpp">
+      <Filter>src\ui\mainwindow</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\pages\generator\calibrationpage.cpp">
+      <Filter>src\ui\pages\generator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\pages\generator\connectionpage.cpp">
+      <Filter>src\ui\pages\generator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\pages\generator\generatorpage.cpp">
+      <Filter>src\ui\pages\generator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\pages\generator\homepage.cpp">
+      <Filter>src\ui\pages\generator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\pages\generator\modulationpage.cpp">
+      <Filter>src\ui\pages\generator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\pages\generator\noisepage.cpp">
+      <Filter>src\ui\pages\generator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\pages\generator\referencepage.cpp">
+      <Filter>src\ui\pages\generator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\pages\generator\sweeppage.cpp">
+      <Filter>src\ui\pages\generator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\pages\generator\systeminfopage.cpp">
+      <Filter>src\ui\pages\generator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\pages\lanconfig\lanconfigpage.cpp">
+      <Filter>src\ui\pages\lanconfig</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\app\appinfo.h">
+      <Filter>src\app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\protocol\siggenprotocol.h">
+      <Filter>src\core\protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\protocol\usrm0protocol.h">
+      <Filter>src\core\protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\theme.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\pages\generator\generatorpages.h">
+      <Filter>src\ui\pages\generator</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\core\siggenclient.h">
+      <Filter>src\core</Filter>
+    </QtMoc>
+    <QtMoc Include="src\core\usrm0client.h">
+      <Filter>src\core</Filter>
+    </QtMoc>
+    <QtMoc Include="src\transport\itransport.h">
+      <Filter>src\transport</Filter>
+    </QtMoc>
+    <QtMoc Include="src\transport\serialtransport.h">
+      <Filter>src\transport</Filter>
+    </QtMoc>
+    <QtMoc Include="src\transport\tcptransport.h">
+      <Filter>src\transport</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ui\mainwindow\mainwindow.h">
+      <Filter>src\ui\mainwindow</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ui\pages\generator\calibrationpage.h">
+      <Filter>src\ui\pages\generator</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ui\pages\generator\connectionpage.h">
+      <Filter>src\ui\pages\generator</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ui\pages\generator\generatorpage.h">
+      <Filter>src\ui\pages\generator</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ui\pages\generator\homepage.h">
+      <Filter>src\ui\pages\generator</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ui\pages\generator\modulationpage.h">
+      <Filter>src\ui\pages\generator</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ui\pages\generator\noisepage.h">
+      <Filter>src\ui\pages\generator</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ui\pages\generator\referencepage.h">
+      <Filter>src\ui\pages\generator</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ui\pages\generator\sweeppage.h">
+      <Filter>src\ui\pages\generator</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ui\pages\generator\systeminfopage.h">
+      <Filter>src\ui\pages\generator</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ui\pages\lanconfig\lanconfigpage.h">
+      <Filter>src\ui\pages\lanconfig</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="src\ui\mainwindow\mainwindow.ui">
+      <Filter>src\ui\mainwindow</Filter>
+    </QtUic>
+    <QtUic Include="src\ui\pages\generator\calibrationpage.ui">
+      <Filter>src\ui\pages\generator</Filter>
+    </QtUic>
+    <QtUic Include="src\ui\pages\generator\connectionpage.ui">
+      <Filter>src\ui\pages\generator</Filter>
+    </QtUic>
+    <QtUic Include="src\ui\pages\generator\generatorpage.ui">
+      <Filter>src\ui\pages\generator</Filter>
+    </QtUic>
+    <QtUic Include="src\ui\pages\generator\homepage.ui">
+      <Filter>src\ui\pages\generator</Filter>
+    </QtUic>
+    <QtUic Include="src\ui\pages\generator\modulationpage.ui">
+      <Filter>src\ui\pages\generator</Filter>
+    </QtUic>
+    <QtUic Include="src\ui\pages\generator\noisepage.ui">
+      <Filter>src\ui\pages\generator</Filter>
+    </QtUic>
+    <QtUic Include="src\ui\pages\generator\referencepage.ui">
+      <Filter>src\ui\pages\generator</Filter>
+    </QtUic>
+    <QtUic Include="src\ui\pages\generator\sweeppage.ui">
+      <Filter>src\ui\pages\generator</Filter>
+    </QtUic>
+    <QtUic Include="src\ui\pages\generator\systeminfopage.ui">
+      <Filter>src\ui\pages\generator</Filter>
+    </QtUic>
+    <QtUic Include="src\ui\pages\lanconfig\lanconfigpage.ui">
+      <Filter>src\ui\pages\lanconfig</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="resources\resources.qrc">
+      <Filter>resources</Filter>
+    </QtRcc>
+  </ItemGroup>
+</Project>
